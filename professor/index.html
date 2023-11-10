@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Área do Professor</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-wrapper">
+        <ul>
+          <li><a href="../index.html">Início</a></li>
+          <li><a href="./index.html">Professor</a></li>
+          <li><a href="../secretaria/index.html">Secretaria</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="container">
+      <h1 class="center-align">Área do Professor</h1>
+      <h3 class="center-align">Cadastrar Notas</h3>
+      <div class="row">
+        <form id="formNotas" class="col s10">
+        </form>
+        <div id="container">
+          <div class="semester">
+              <h2>Semestre 1</h2>
+              <label for="grade1">Nota:</label>
+              <input type="number" id="grade1" min="0" max="25">
+              <label for="attendance1">Frequência:</label>
+              <input type="number" id="attendance1" min="0" max="100">
+          </div>
+          <div class="semester">
+              <h2>Semestre 2</h2>
+              <label for="grade2">Nota:</label>
+              <input type="number" id="grade2" min="0" max="25">
+              <label for="attendance2">Frequência:</label>
+              <input type="number" id="attendance2" min="0" max="100">
+          </div>
+          <div class="semester">
+              <h2>Semestre 3</h2>
+              <label for="grade3">Nota:</label>
+              <input type="number" id="grade3" min="0" max="25">
+              <label for="attendance3">Frequência:</label>
+              <input type="number" id="attendance3" min="0" max="100">
+          </div>
+              <div class="semester">
+                <h2>Semestre 4</h2>
+                <label for="grade4">Nota:</label>
+                <input type="number" id="grade3" min="0" max="25">
+                <label for="attendance3">Frequência:</label>
+                <input type="number" id="attendance4" min="0" max="100">
+           </div>
+
+      <button class="btn waves-effect waves-light" type="submit" name="action">
+        Enviar Notas
+      </button>
+      <div class="resultado center-align"></div>
+    </div>
+    
+  </body>
+  <script src="./script_professor.js"></script>
+</html>

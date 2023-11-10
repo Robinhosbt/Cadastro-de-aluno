@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secretaria</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../professor/index.html">Professor</a></li>
+        <li><a href="./index.html">Secretaria</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <h1 class="center-align">Secretaria</h1>
+      <h3 class="center-align">Cadastrar Aluno</h3>
+      <form class="formAluno">
+        <div class="input-field">
+          <input type="text" class="validate nomeAluno" />
+          <label for="nomeAluno">Nome do Aluno</label>
+        </div>
+        <div class="center-align">
+          <input
+            type="submit"
+            class="btn waves-effect waves-light cadastrarAluno"
+            value="Cadastrar"
+          />
+        </div>
+      </form>
+      <br />
+      <h3 class="center-align">Cadastrar Disciplina</h3>
+      <form class="formDisciplina">
+        <div class="input-field">
+          <input type="text" class="validate nomeDisciplina" />
+          <label for="nomeDisciplina">Disciplina</label>
+        </div>
+        <div class="center-align">
+          <input
+            type="submit"
+            class="btn waves-effect waves-light cadastrarDisciplina"
+            value="Cadastrar"
+          />
+        </div>
+      </form>
+      <form class="center-align">
+        <div class="input-field">
+          <input
+            type="submit"
+            class="btn waves-effect waves-red cadastrarDisciplina"
+            value="Limpar Local Storage"
+            onclick="limparLocalStorage()"
+          />
+        </div>
+      </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="./script_aluno.js"></script>
+    <script src="./script_disciplina.js"></script>
+  </body>
+</html>
